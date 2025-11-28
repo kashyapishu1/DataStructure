@@ -100,6 +100,24 @@ namespace LinkListPrograms
                 Console.WriteLine("Not Found");
         }
 
+        public void FindLast()
+        {
+            if(start ==null)
+            {
+                Console.WriteLine("List is empty");
+                return;
+            }
+            Node p = start;
+            while (p != null)
+            {
+                if(p.link==null)
+                {
+                    Console.WriteLine("The value in last node is "+p.info);
+                }
+                p = p.link;
+            }
+        }
+
     }
 }
 

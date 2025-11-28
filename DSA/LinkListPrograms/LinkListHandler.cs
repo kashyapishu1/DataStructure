@@ -16,6 +16,7 @@ namespace LinkListPrograms
                 Console.WriteLine("Press 3 to add a multiple node in list");
                 Console.WriteLine("Press 4 to Find the total number of elements");
                 Console.WriteLine("Press 5 to find the postion of a value");
+                Console.WriteLine("Press 6 to find the value in Last node");
                 int parentchoice = Convert.ToInt32(Console.ReadLine());
                 switch (parentchoice)
                 {
@@ -53,6 +54,11 @@ namespace LinkListPrograms
                     case 5:
                         {
                             llo.Search();
+                            break;
+                        }
+                    case 6:
+                        {
+                            llo.FindLast();
                             break;
                         }
                 }
